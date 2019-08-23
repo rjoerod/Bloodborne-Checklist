@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Bloodborne Cheat Sheet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cheat sheet for Bloodborne. Checklist of things to do, items to get etc.">
+  <meta name="author" content="Zachary Kjellberg">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/jstorage.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>var profilesKey = 'bloodborne_profiles';</script>
+  <script src="js/main.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66576837-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <h1>Bloodborne Cheat Sheet</h1>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tabPlaythrough" data-toggle="tab">Playthrough</a></li>
+          <li><a href="#tabChecklists" data-toggle="tab">Checklists</a></li>
+          <li><a href="#tabInformation" data-toggle="tab">Information</a></li>
+          <li><a href="#tabHelp" data-toggle="tab">Help</a></li>
+        </ul>
+        <div class="profile" style="float: right;">
+          <div class="input-append">
+            <select id="profiles">
+            </select>
+            <button class="btn" type="button" id="profileAdd">Add</button>
+            <button class="btn" type="button" id="profileEdit">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="intro">
+      <p>
+        The following is a checklist and set of information for use when playing Bloodborne. If this is your first time visiting this page please check out the Help section.
+        This checklist was created by using <a href="https://github.com/smcnabb">Stephen McNabb</a>'s Dark Soul Cheat Sheet code for use with <a href="http://bloodborne.wiki.fextralife.com/Game+Progress+Route">Fextralife's Game Progress Route.</a>
+      </p>
+      <p>
+        <em>Warning: Contains Spoilers!</em>
+      </p>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="tabPlaythrough">
+        <h2>Playthrough Checklist <span id="playthrough_overall_total"></span></h2>
+        <ul>
+          <li><a href="#1st_Floor_Sickroom">1st Floor Sickroom</a> <span id="playthrough_nav_totals_1"></span></li>
+          <li><a href="#Hunters_Dream">Hunter's Dream</a> <span id="playthrough_nav_totals_2"></span></li>
+          <li><a href="#Central_Yharnam">Central Yharnam</a> <span id="playthrough_nav_totals_3"></span></li>
+          <li><a href="#Great_Bridge">Great Bridge</a> (Optional) <span id="playthrough_nav_totals_4"></span></li>
+          <li><a href="#Tomb_of_Oedon">Tomb of Oedon</a> <span id="playthrough_nav_totals_5"></span></li>
+          <li><a href="#Cathedral_Ward">Cathedral Ward</a> <span id="playthrough_nav_totals_6"></span></li>
+          <li><a href="#Old_Yharnam">Old Yharnam</a> (Optional) <span id="playthrough_nav_totals_7"></span></li>
+          <li><a href="#Healing_Church_Workshop">Healing Church Workshop</a> (Optional) <span id="playthrough_nav_totals_8"></span></li>
+          <li><a href="#Cathedral_Ward_revisited">Cathedral Ward revisited</a> <span id="playthrough_nav_totals_9"></span></li>
+          <li><a href="#Hemwick_Charnel_Lane">Hemwick Charnel Lane</a> (Optional) <span id="playthrough_nav_totals_10"></span></li>
+          <li><a href="#Hypogean_Gaol">Hypogean Gaol</a> (Optional) <span id="playthrough_nav_totals_11"></span></li>
+          <li><a href="#Lecture_Building_1st_Floor">Lecture Building 1st Floor</a> (Optional) <span id="playthrough_nav_totals_12"></span></li>
+          <li><a href="#Nightmare_Frontier">Nightmare Frontier</a> (Optional) <span id="playthrough_nav_totals_13"></span></li>
+          <li><a href="#Forbidden_Woods">Forbidden Woods</a> <span id="playthrough_nav_totals_14"></span></li>
+          <li><a href="#Iosefkas_Clinic">Iosefka's Clinic</a> (Optional) <span id="playthrough_nav_totals_15"></span></li>
+          <li><a href="#Castle_Cainhurst">Castle Cainhurst</a> (Optional) <span id="playthrough_nav_totals_16"></span></li>
+          <li><a href="#Byrgenwerth">Byrgenwerth</a> <span id="playthrough_nav_totals_17"></span></li>
+          <li><a href="#Yahargul_Unseen_Village">Yahar'gul, Unseen Village</a> <span id="playthrough_nav_totals_18"></span></li>
+          <li><a href="#Upper_Cathedral_Ward">Upper Cathedral Ward</a> (Optional) <span id="playthrough_nav_totals_19"></span></li>
+          <li><a href="#Orphanage">Orphanage</a> (Optional) <span id="playthrough_nav_totals_20"></span></li>
+          <li><a href="#Lecture_Building_2nd_Floor">Lecture Building 2nd Floor</a> <span id="playthrough_nav_totals_21"></span></li>
+          <li><a href="#Nightmare_of_Mensis">Nightmare of Mensis</a> <span id="playthrough_nav_totals_22"></span></li>
+          <li><a href="#toh_dlc">The Old Hunters</a> <span id="playthrough_nav_totals_23"></span></li>
+          <li><a href="#hunters_nightmare">Hunter's Nightmare (DLC)</a> <span id="playthrough_nav_totals_24"></span></li>
+          <li><a href="#research_hall">Research Hall (DLC)</a> <span id="playthrough_nav_totals_25"></span></li>
+          <li><a href="#fishing_hamlet">Fishing Hamlet (DLC)</a> <span id="playthrough_nav_totals_26"></span></li>
+          <li><a href="#End_Game">End Game</a> <span id="playthrough_nav_totals_27"></span></li>
+        </ul>
+        <hr />
+
+        <h3 id="1st_Floor_Sickroom"><a href="http://bloodborne.wiki.fextralife.com/1st+Floor+Sickroom">1st Floor Sickroom</a> <span id="playthrough_totals_1"></span></h3>
+        <ul>
+          <li data-id="playthrough_1_1">Die, or continue into <a href="http://bloodborne.wiki.fextralife.com/Central+Yharnam">Central Yharnam</a></li>
+        </ul>
+
+        <h3 id="Hunters_Dream"><a href="http://bloodborne.wiki.fextralife.com/Hunter%27s+Dream">Hunter's Dream</a> <span id="playthrough_totals_2"></span></h3>
+        <ul>
+          <li data-id="playthrough_2_1">Collect starting gear from <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> on the stairs</li>
+          <li data-id="playthrough_2_2">Use tombstone to warp back to <a href="http://bloodborne.wiki.fextralife.com/1st+Floor+Sickroom">1st Floor Sickroom</a> or if you ran past the <a href="http://bloodborne.wiki.fextralife.com/Wolf+Beast">Wolf Beast</a> warp to <a href="http://bloodborne.wiki.fextralife.com/Central+Yharnam">Central Yharnam</a></li>
+        </ul>
+
+        <h3 id="Central_Yharnam"><a href="http://bloodborne.wiki.fextralife.com/Central+Yharnam">Central Yharnam</a> <span id="playthrough_totals_3"></span></h3>
+        <ul>
+          <li data-id="playthrough_3_1">Find <a href="http://bloodborne.wiki.fextralife.com/Gilbert">Gilbert</a> and begin his quest line</li>
+          <li data-id="playthrough_3_2">Meet <a href="http://bloodborne.wiki.fextralife.com/Eileen+the+Crow">Eileen the Crow</a> atop the sewers</li>
+          <li data-id="playthrough_3_3">Find <a href="http://bloodborne.wiki.fextralife.com/Viola">Viola's Daughter</a> and get the <a href="http://bloodborne.wiki.fextralife.com/Tiny+Music+Box">Tiny Music Box</a></li>
+          <li data-id="playthrough_3_4">Obtain <a href="https://bloodborne.wiki.fextralife.com/Saw+Spear">Saw Spear</a></li>
+          <li data-id="playthrough_3_5">Obtain <a href="https://bloodborne.wiki.fextralife.com/Hunter+Set">Hunter Set</a></li>
+          
+        </ul>
+
+        <h3 id="Great_Bridge"><a href="http://bloodborne.wiki.fextralife.com/Great+Bridge">Great Bridge</a> (Optional) <span id="playthrough_totals_4"></span></h3>
+        <ul>
+          <li data-id="playthrough_4_1">Defeat <a href="http://bloodborne.wiki.fextralife.com/Cleric+Beast">Cleric Beast</a></li>
+        </ul>
+
+        <h3 id="Tomb_of_Oedon"><a href="http://bloodborne.wiki.fextralife.com/Tomb+of+Oedon">Tomb of Oedon</a> <span id="playthrough_totals_5"></span></h3>
+        <ul>
+          <li data-id="playthrough_5_1">Defeat <a href="http://bloodborne.wiki.fextralife.com/Priest+Gascoigne">Father Gascoigne</a></li>
+          <li data-id="playthrough_5_2">Pick up <a href="http://bloodborne.wiki.fextralife.com/Red+Jeweled+Brooch">Red Jeweled Brooch</a></li>
+          <li data-id="playthrough_5_3">Obtain <a href="http://bloodborne.wiki.fextralife.com/Blood+Gem+Workshop+Tool">Blood Gem Workshop Tool</a></li>
+          <li data-id="playthrough_5_4">You will now have at least 1 Insight and can now buy the <a href="http://bloodborne.wiki.fextralife.com/small+resonant+bell">Small Resonant Bell</a> from the Upper Bath <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a></li>
+        </ul>
+
+        <h3 id="Cathedral_Ward"><a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> <span id="playthrough_totals_6"></span></h3>
+        <ul>
+          <li data-id="playthrough_6_1">Meet <a href="http://bloodborne.wiki.fextralife.com/Alfred">Alfred</a></li>
+          <li data-id="playthrough_6_2">Obtain the <a href="http://bloodborne.wiki.fextralife.com/Monocular">Monocular</a></li>
+          <li data-id="playthrough_6_3">Return to the <a href="http://bloodborne.wiki.fextralife.com/Lonely+Old+Woman">Lonely Old Woman</a> and direct her to the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> (you must first talk to the <a href="http://bloodborne.wiki.fextralife.com/Oedon+Chapel+Dweller">Oedon Chapel Dweller</a> near the Cathedral Ward lamp)</li>
+          <li data-id="playthrough_6_4">Return to <a href="http://bloodborne.wiki.fextralife.com/Gilbert">Gilbert</a> and receive the <a href="http://bloodborne.wiki.fextralife.com/Flamesprayer">Flame Sprayer</a></li>
+          <li data-id="playthrough_6_5">Return to the <a href="http://bloodborne.wiki.fextralife.com/Young+Yharnam+Girl+(Viola%27s+Daughter)">Young Yharnam Girl (Viola's Daughter)</a> and either give her the <a href="http://bloodborne.wiki.fextralife.com/Red+Jeweled+Brooch">Red Jeweled Brooch</a> or send her to the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> (She won't actually show up, but the story arc will continue.)</li>
+          <li data-id="playthrough_6_6">Purchase the <a href="http://bloodborne.wiki.fextralife.com/Hunter+Chief+Emblem">Hunter Chief Emblem</a> from the Lower Bath <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 10,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a></li>
+          <li data-id="playthrough_6_7">Obtain alternative <a href="https://bloodborne.wiki.fextralife.com/Hunter+Set">Hunter Set</a></li>
+          <li data-id="playthrough_6_8">Obtain <a href="https://bloodborne.wiki.fextralife.com/Black+Church+Set">Black Church Set</a></li>
+        </ul>
+
+        <h3 id="Old_Yharnam"><a href="http://bloodborne.wiki.fextralife.com/Old+Yharnam">Old Yharnam</a> (Optional) <span id="playthrough_totals_7"></span></h3>
+        <ul>
+          <li data-id="playthrough_7_1">Enter from the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a>, evade <a href="http://bloodborne.wiki.fextralife.com/Djura">Djura</a>'s gatling gun, and continue through to the boss. Killing <a href="http://bloodborne.wiki.fextralife.com/Djura">Djura</a> now will get you the <a href="http://bloodborne.wiki.fextralife.com/Powder+Keg+Hunter+Badge">Powder Keg Hunter Badge</a>
+            <ul>
+              <li data-id="playthrough_7_2">Killing him also gives access to the <a href="http://bloodborne.wiki.fextralife.com/Ashen+Hunter+Set">Ashen Hunter Set</a></li>
+            </ul>
+          </li>
+          <li data-id="playthrough_7_3">Obtain <a href="https://bloodborne.wiki.fextralife.com/Rifle+Spear">Rifle Spear</a></li>
+          <li data-id="playthrough_7_4">Obtain <a href="https://bloodborne.wiki.fextralife.com/Hunter%27s+Torch">Hunter's Torch</a></li>
+          <li data-id="playthrough_7_5">Obtain <a href="https://bloodborne.wiki.fextralife.com/Charred+Hunter+Set">Charred Hunter Set</a></li>
+          <li data-id="playthrough_7_6">Defeat <a href="http://bloodborne.wiki.fextralife.com/Blood-Starved+Beast">Blood-Starved Beast</a> and receive <a href="http://bloodborne.wiki.fextralife.com/Pthumeru+Chalice">Pthumeru Chalice</a>
+          </li>
+        </ul>
+
+        <h3 id="Healing_Church_Workshop"><a href="http://bloodborne.wiki.fextralife.com/Healing+Church+Workshop">Healing Church Workshop</a> (Optional) <span id="playthrough_totals_8"></span></h3>
+        <ul>
+          <li data-id="playthrough_8_1">The previously closed door near the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> lamp will now be open</li>
+          <li data-id="playthrough_8_2">Obtain the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Radiant Sword Hunter Badge</a> at the top</li>
+          <li data-id="playthrough_8_3"><a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Abandoned Old Workshop</a> (Optional)
+            <ul>
+              <li data-id="playthrough_8_4">Obtain <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a></li>
+            </ul>
+          </li>
+          <li data-id="playthrough_8_5">Fall down the rafters to the bottom to access the shortcut back to <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> so you don't have to buy the <a href="http://bloodborne.wiki.fextralife.com/Hunter+Chief+Emblem">Hunter Chief Emblem</a></li>
+        </ul>
+
+        <h3 id="Cathedral_Ward_revisited"><a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward revisited</a> <span id="playthrough_totals_9"></span></h3>
+        <ul>
+          <li data-id="playthrough_9_1">Once you have beaten 3 bosses find <a href="http://bloodborne.wiki.fextralife.com/Arianna">Arianna</a> and direct her to the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a>. This is important for getting <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a> later</li>
+          <li data-id="playthrough_9_2">After telling <a href="http://bloodborne.wiki.fextralife.com/Arianna">Arianna</a> to go to the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a>, tell the <a href="http://bloodborne.wiki.fextralife.com/Skeptical+Man">Skeptical Man</a> to go to Iosefka's Clinic (you must first talk to <a href="http://bloodborne.wiki.fextralife.com/Iosefka">Iosefka</a>). This will result in his apperance at <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a></li>
+          <li data-id="playthrough_9_3">Defeat <a href="http://bloodborne.wiki.fextralife.com/Vicar+Amelia">Vicar Amelia</a> to get the password for the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a> by touching the altar behind the boss arena</li>
+          <li data-id="playthrough_9_4">You can receive the <a href="http://bloodborne.wiki.fextralife.com/Tonsil+Stone">Tonsil Stone</a> from 4 different NPCs with red lanterns once you open the door to the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a>. The suggested ones are either in <a href="http://bloodborne.wiki.fextralife.com/Healing+Church+Workshop">Healing Church Workshop</a> or <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a></li>
+        </ul>
+
+        <h3 id="Hemwick_Charnel_Lane"><a href="http://bloodborne.wiki.fextralife.com/Hemwick+Charnel+Lane">Hemwick Charnel Lane</a> (Optional) <span id="playthrough_totals_10"></span></h3>
+        <ul>
+          <li data-id="playthrough_10_1">To get here you must go left of the <a href="http://bloodborne.wiki.fextralife.com/Grand+Cathedral">Grand Cathedral</a> when facing the front of the cathedral from the outside</li>
+          <li data-id="playthrough_10_2">Defeat <a href="http://bloodborne.wiki.fextralife.com/Witch+of+Hemwick">Witch of Hemwick</a></li>
+          <li data-id="playthrough_10_3">Obtain the <a href="http://bloodborne.wiki.fextralife.com/Rune+Workshop+Tool">Rune Workshop Tool</a></li>
+        </ul>
+
+        <h3 id="Hypogean_Gaol"><a href="http://bloodborne.wiki.fextralife.com/Hypogean+Gaol">Hypogean Gaol</a> (Optional) <span id="playthrough_totals_11"></span></h3>
+        <ul>
+          <li data-id="playthrough_11_1">To get here you must face one of the <a href="http://bloodborne.wiki.fextralife.com/Snatcher">Snatcher</a> enemies and let it kill you without it enraging, just let it attack and kill you without hitting it. It will look like you die but a cutscene will play and you will not lose your <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a></li>
+          <li data-id="playthrough_11_2">This is a good place to farm <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a>, <a href="http://bloodborne.wiki.fextralife.com/Blood+Stone+Shard">Blood Stone Shard</a>, and <a href="http://bloodborne.wiki.fextralife.com/Twin+Blood+Stone+Shards">Twin Blood Stone Shards</a> by killing the 2 <a href="http://bloodborne.wiki.fextralife.com/Snatcher">Snatchers</a> and the 2 <a href="http://bloodborne.wiki.fextralife.com/Giant+Boar">Giant Boars</a> outside. Nets around 12,000 Blood Echoes per run</li>
+          <li data-id="playthrough_11_3">Obtain <a href="http://bloodborne.wiki.fextralife.com/Tonitrus">Tonitrus</a> weapon</li>
+          <li data-id="playthrough_11_4">If you send <a href="http://bloodborne.wiki.fextralife.com/Adella+the+Nun">Adella the Nun</a> to the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a>, refrain from accepting blood from <a href="http://bloodborne.wiki.fextralife.com/Arianna">Arianna</a> afterward if you want the "good" ending</li>
+          <li data-id="playthrough_11_5">Defeat <a href="http://bloodborne.wiki.fextralife.com/Darkbeast+Paarl">Darkbeast Paarl</a></li>
+          <li data-id="playthrough_11_6">Obtain <a href="https://bloodborne.wiki.fextralife.com/Yahar%27gul+set">Yahar'Gul Set</a></li>
+        </ul>
+
+        <h3 id="Lecture_Building_1st_Floor"><a href="http://bloodborne.wiki.fextralife.com/Lecture+Building">Lecture Building 1st Floor</a> (Optional) <span id="playthrough_totals_12"></span></h3>
+        <ul>
+          <li data-id="playthrough_12_1">To reach this location, let the <a href="http://bloodborne.wiki.fextralife.com/Lesser+Amygdala">Lesser Amygdala</a> in the church to the right of the <a href="http://bloodborne.wiki.fextralife.com/Grand+Cathedral">Grand Cathedral</a> kill you while having the <a href="http://bloodborne.wiki.fextralife.com/Tonsil+Stone">Tonsil Stone</a> in your inventory</li>
+          <li data-id="playthrough_12_2">Leave the lecture building through the large doors at the end of the hall to the <a href="http://bloodborne.wiki.fextralife.com/Nightmare+Frontier">Nightmare Frontier</a>. Can be quite difficult right now, suggested to return later. Beware of the poison water</li>
+          <li data-id="playthrough_12_3">Obtain the <a href="http://bloodborne.wiki.fextralife.com/Augur+of+Ebrietas">Augur of Ebrietas</a></li>
+        </ul>
+
+        <h3 id="Nightmare_Frontier"><a href="http://bloodborne.wiki.fextralife.com/Nightmare+Frontier">Nightmare Frontier</a> (Optional) <span id="playthrough_totals_13"></span></h3>
+        <ul>
+          <li data-id="playthrough_13_1">Defeat <a href="http://bloodborne.wiki.fextralife.com/Amygdala">Amygdala</a> and receive <a href="http://bloodborne.wiki.fextralife.com/Ailing+Loran+Chalice">Ailing Loran Chalice</a></li>
+        </ul>
+
+        <h3 id="Forbidden_Woods"><a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a> <span id="playthrough_totals_14"></span></h3>
+        <ul>
+          <li data-id="playthrough_14_2">Find the <a href="http://bloodborne.wiki.fextralife.com/Suspicious+Beggar">Suspicious Beggar</a> and send him to Iosefka's Clinic for an easy rune</li>
+          <li data-id="playthrough_14_1">Defeat the <a href="http://bloodborne.wiki.fextralife.com/Shadow+of+Yharnam">Shadow of Yharnam</a></li>
+          <li data-id="playthrough_14_3">Take hidden path to rear entrance of <a href="http://bloodborne.wiki.fextralife.com/Iosefka%27s+Clinic">Iosefka's Clinic</a></li>
+          <li data-id="playthrough_14_4">Obtain <a href="https://bloodborne.wiki.fextralife.com/White+Church+set">White Church Set</a></li>
+          <li data-id="playthrough_14_5">Obtain <a href="https://bloodborne.wiki.fextralife.com/Graveguard+Set">Graveguard Set</a></li>
+          <li data-id="playthrough_14_6">Obtain <a href="https://bloodborne.wiki.fextralife.com/Cannon">Cannon</a></li>
+        </ul>
+
+        <h3 id="Iosefkas_Clinic"><a href="http://bloodborne.wiki.fextralife.com/Iosefka%27s+Clinic">Iosefka's Clinic</a> (Rear Entrance) (Optional) <span id="playthrough_totals_15"></span></h3>
+        <ul>
+          <li data-id="playthrough_15_1">NOTE: If you intend to use Iosefka as a source for one of the <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a>, do NOT kill her now. Return here after killing <a href="http://bloodborne.wiki.fextralife.com/Rom%2C+The+Vacuous+Spider">Rom, The Vacuous Spider</a> in order to get <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a>. The catch here is that killing her now would let you obtain the <a href="http://bloodborne.wiki.fextralife.com/Oedon+Writhe">Oedon Writhe Rune</a> (Tier 2). This makes her the best candidate to sacrifice, since the other three cord sources don't require you to give up anything. The choice is yours</li>
+          <li data-id="playthrough_15_2">Obtain <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Summons">Cainhurst Summons</a></li>
+          <li data-id="playthrough_15_3">Open front door</li>
+        </ul>
+
+        <h3 id="Castle_Cainhurst"><a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Castle">Castle Cainhurst</a> (Optional) <span id="playthrough_totals_16"></span></h3>
+        <ul>
+          <li data-id="playthrough_16_1">To get here you must have the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Summons">Cainhurst Summons</a> in your inventory and approach the large obelisk in the graveyard near the <a href="http://bloodborne.wiki.fextralife.com/Witch%27s+Abode">Witch's Abode</a>, there are two <a href="http://bloodborne.wiki.fextralife.com/Executioner">executioners</a> in the graveyard. This area will only activate once the Witch of Hemwick has been defeated. Area can be quite difficult</li>
+          <li data-id="playthrough_16_2">Defeat <a href="http://bloodborne.wiki.fextralife.com/Martyr+Logarius">Martyr Logarius</a></li>
+          <li data-id="playthrough_16_3">Gain access to <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Vilebloods">Cainhurst Vilebloods</a> Covenant</li>
+          <li data-id="playthrough_16_4">Obtain <a href="https://bloodborne.wiki.fextralife.com/Reiterpallasch">Reiterpallasch</a></li>
+          <li data-id="playthrough_16_5">Obtain <a href="https://bloodborne.wiki.fextralife.com/Executioner+Set">Executioner Set</a></li>
+          <li data-id="playthrough_16_6">Obtain <a href="https://bloodborne.wiki.fextralife.com/Knight%27s+Set">Knight's Set</a></li>
+          <li data-id="playthrough_16_7">Obtain <a href="https://bloodborne.wiki.fextralife.com/Knight%27s+Wig">Knight's Wig</a></li>
+        </ul>
+
+        <h3 id="Byrgenwerth"><a href="http://bloodborne.wiki.fextralife.com/Byrgenwerth">Byrgenwerth</a> <span id="playthrough_totals_17"></span></h3>
+        <ul>
+          <li data-id="playthrough_17_1">Find the <a href="http://bloodborne.wiki.fextralife.com/Lunarium+Key">Lunarium Key</a> and defeat <a href="http://bloodborne.wiki.fextralife.com/Rom%2C+The+Vacuous+Spider">Rom, The Vacuous Spider</a>. NOTE: This will trigger the <a href="http://bloodborne.wiki.fextralife.com/Moon+Phases">Blood Moon</a>, permanently changing the game world.
+            <ul>
+              <li data-id="playthrough_17_2"><a href="http://bloodborne.wiki.fextralife.com/Hypogean+Gaol">Hypogean Gaol</a> lamp will no longer work; however, there are shortcuts into here from <a href="http://bloodborne.wiki.fextralife.com/Yahar%27gul%2C+Unseen+Village">Yahar'gul, Unseen Village</a></li>
+              <li data-id="playthrough_17_3">Any NPCs that can be "saved" (ask you about a safe place) and have not been saved will be lost. Make sure <a href="http://bloodborne.wiki.fextralife.com/Arianna">Arianna</a> is saved to get <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a></li>
+              <li data-id="playthrough_17_4"><a href="http://bloodborne.wiki.fextralife.com/Amygdala">Amygdalas</a> will become visible</li>
+              <li data-id="playthrough_17_5">Many Hunter NPCs quest lines can be completed now such as <a href="http://bloodborne.wiki.fextralife.com/Eileen+the+Crow">Eileen the Crow</a></li>
+              <li data-id="playthrough_17_6"><a href="http://bloodborne.wiki.fextralife.com/Iosefka">Iosefka</a> can no longer be fought to obtain the <a href="http://bloodborne.wiki.fextralife.com/Oedon+Writhe">Oedon Writhe Rune</a> (Tier 2). After killing Rom, she will then provide <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord instead</a></li>
+            </ul>
+          </li>
+          <li data-id="playthrough_17_7">Kill <a href="http://bloodborne.wiki.fextralife.com/Master+Willem">Master Willem</a> for the <a href="http://bloodborne.wiki.fextralife.com/Eye">Eye Rune</a></li>
+          <li data-id="playthrough_17_8">Obtain <a href="http://bloodborne.wiki.fextralife.com/Empty+Phantasm+Shell">Empty Phantasm Shell</a></li>
+        </ul>
+
+        <h3 id="Yahargul_Unseen_Village"><a href="http://bloodborne.wiki.fextralife.com/Yahar%27gul%2C+Unseen+Village">Yahar'gul, Unseen Village</a> <span id="playthrough_totals_18"></span></h3>
+        <ul>
+          <li data-id="playthrough_18_1">The <a href="http://bloodborne.wiki.fextralife.com/Upper+Cathedral+Key">Upper Cathedral Key</a> can be found in the building where the laser-shooting Amygdala is located</li>
+          <li data-id="playthrough_18_2">Defeat <a href="http://bloodborne.wiki.fextralife.com/One+Reborn">One Reborn</a></li>
+          <li data-id="playthrough_18_3">Inspect the Mummy after <a href="http://bloodborne.wiki.fextralife.com/One+Reborn">One Reborn</a> to gain access to <a href="http://bloodborne.wiki.fextralife.com/Lecture+Building+2nd+Floor">Lecture Building 2nd Floor</a></li>
+          <li data-id="playthrough_18_4">Obtain bloodgem that adds +18% Physical ATK</li>
+          <li data-id="playthrough_18_5">Obtain <a href="https://bloodborne.wiki.fextralife.com/Iron+Yahar%27gul+Helm">Iron Yarhar'gul Helm</a></li>
+        </ul>
+
+        <h3 id="Upper_Cathedral_Ward"><a href="http://bloodborne.wiki.fextralife.com/Upper+Cathedral+Ward">Upper Cathedral Ward</a> (Optional)<span id="playthrough_totals_19"></span></h3>
+        <ul>
+          <li data-id="playthrough_19_1">Get <a href="http://bloodborne.wiki.fextralife.com/Orphanage+Key">Orphanage Key</a></li>
+          <li data-id="playthrough_19_2">Obtain the <a href="http://bloodborne.wiki.fextralife.com/Cosmic+Eye+Watcher+Badge">Cosmic Eye Watcher Badge</a></li>
+          <li data-id="playthrough_19_3">Obtain <a href="http://bloodborne.wiki.fextralife.com/Gestures">Make Contact gesture</a></li>
+          <li data-id="playthrough_19_4">Obtain <a href="https://bloodborne.wiki.fextralife.com/Choir+Set">Choir Set</a></li>
+        </ul>
+
+        <h3 id="Orphanage"><a href="http://bloodborne.wiki.fextralife.com/Orphanage">Orphanage</a> (Optional) <span id="playthrough_totals_20"></span></h3>
+        <ul>
+            <li data-id="playthrough_20_1">Defeat <a href="http://bloodborne.wiki.fextralife.com/Celestial+Emissary">Celestial Emissary</a> to gain access to <a href="http://bloodborne.wiki.fextralife.com/Lumenflower+Gardens">Lumenflower Gardens</a></li>
+            <li data-id="playthrough_20_2">Defeat <a href="http://bloodborne.wiki.fextralife.com/Ebrietas%2C+Daughter+of+the+Cosmos">Ebrietas, Daughter of Cosmos</a></li>
+        </ul>
+
+        <h3 id="Lecture_Building_2nd_Floor"><a href="http://bloodborne.wiki.fextralife.com/Lecture+Building+2nd+Floor">Lecture Building 2nd Floor</a> <span id="playthrough_totals_21"></span></h3>
+        <ul>
+          <li data-id="playthrough_21_1">Open shortcut to <a href="http://bloodborne.wiki.fextralife.com/Lecture+Building+2nd+Floor">Lecture Building 1st Floor</a></li>
+          <li data-id="playthrough_21_2">Obtain <a href="http://bloodborne.wiki.fextralife.com/Communion">Communion Rune</a> (Tier 2)</li>
+          <li data-id="playthrough_21_3">Exit the area to access <a href="http://bloodborne.wiki.fextralife.com/Nightmare+of+Mensis">Nightmare of Mensis</a></li>
+        </ul>
+
+        <h3 id="Nightmare_of_Mensis"><a href="http://bloodborne.wiki.fextralife.com/Nightmare+of+Mensis">Nightmare of Mensis</a> <span id="playthrough_totals_22"></span></h3>
+        <ul>
+          <li data-id="playthrough_22_1">Defeat <a href="http://bloodborne.wiki.fextralife.com/Micolash%2C+Host+of+the+Nightmare">Micolash, Host of the Nightmare</a></li>
+          <li data-id="playthrough_22_2">Defeat <a href="http://bloodborne.wiki.fextralife.com/Mergo%27s+Wet+Nurse">Mergo's Wet Nurse</a> and receive <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a></li>
+          <li data-id="playthrough_22_3">Pull lever and drop the <a href="http://bloodborne.wiki.fextralife.com/Brain+of+Mensis">Brain of Mensis</a></li>
+          <li data-id="playthrough_22_4">Obtain <a href="http://bloodborne.wiki.fextralife.com/Blood+Rock">Blood Rock</a></li>
+          <li data-id="playthrough_22_5">Obtain <a href="http://bloodborne.wiki.fextralife.com/Moon">Moon Caryll Rune</a> (Tier 3)</li>
+          <li data-id="playthrough_22_6">Kill <a href="http://bloodborne.wiki.fextralife.com/Brain+of+Mensis">Brain of Mensis</a> and obtain the <a href="http://bloodborne.wiki.fextralife.com/Living+String">Living String</a></li>
+        </ul>
+
+        <h3 id="toh_dlc">Access <a href="https://bloodborne.wiki.fextralife.com/The+Old+Hunters">The Old Hunters</a> <span id="playthrough_totals_23"></span></h3>
+        <ul>
+          <li data-id="playthrough_23_1">Obtain <a href="https://bloodborne.wiki.fextralife.com/Eye+of+a+Blood-Drunk+Hunter">Eye of a Blood Drunk Hunter</a> from the Hunter's Dream</li>
+          <li data-id="playthrough_23_2">Get grabbed by the Amygdala outside the Cathedral Ward lamp</li>
+        </ul>
+
+        <h3 id="hunters_nightmare"><a href="https://bloodborne.wiki.fextralife.com/The+Hunter's%20nightmare">Hunter's Nightmare</a> (The Old Hunters) <span id="playthrough_totals_24"></span></h3>
+        <ul>
+            <li data-id="playthrough_24_1">Obtain <a href="https://bloodborne.wiki.fextralife.com/Whirligig+Saw">Whirligig Saw</a></li>
+            <li data-id="playthrough_24_2">Obtain <a href="https://bloodborne.wiki.fextralife.com/Amygdalan+Arm">Amygdalan Arm</a></li>
+            <li data-id="playthrough_24_3">Obtain <a href="https://bloodborne.wiki.fextralife.com/Firing+Hammer+Badge">Firing Hammer Badge</a></li>
+            <li data-id="playthrough_24_4">Obtain <a href="https://bloodborne.wiki.fextralife.com/Butcher+Set">Butcher Set</a></li>
+            <li data-id="playthrough_24_5">Defeat <a href="https://bloodborne.wiki.fextralife.com/Ludwig%2C+The+Holy+Blade">Ludwig, the Holy Blade</a></li>
+            <li data-id="playthrough_24_6">Obtain <a href="https://bloodborne.wiki.fextralife.com/Holy+Moonlight+Sword">Holy Moonlight Sword</a></li>
+            <li data-id="playthrough_24_8">Obtain <a href="https://bloodborne.wiki.fextralife.com/Yamamura+Set">Yamamura Set</a> after getting the Underground Cell Inner Chamber Key (see <a href="#fishing_hamlet">Fishing Hamlet</a>)</li>
+            <li data-id="playthrough_24_7">Defeat <a href="https://bloodborne.wiki.fextralife.com/Laurence%2C+the+First+Vicar">Laurence, the first Vicar</a> (on return to Hunter's Nightmare)</li>
+            <li data-id="playthrough_24_8">Obtain <a href="https://bloodborne.wiki.fextralife.com/Beasthunter+Saif">Beasthunter Saif</a></li>
+            <li data-id="playthrough_24_9">Obtain <a href="https://bloodborne.wiki.fextralife.com/Beast+Cutter">Beast Cutter</a></li>
+            <li data-id="playthrough_24_10">Obtain <a href="https://bloodborne.wiki.fextralife.com/Boom+Hammer">Boom Hammer</a></li>
+            <li data-id="playthrough_24_11">Obtain <a href="https://bloodborne.wiki.fextralife.com/Church+Pick">Church Pick</a></li>
+            <li data-id="playthrough_24_12">Obtain <a href="https://bloodborne.wiki.fextralife.com/Fist+of+Gratia">Fist of Gratia</a></li>
+            <li data-id="playthrough_24_13">Obtain <a href="https://bloodborne.wiki.fextralife.com/Gatling+Gun">Gatling Gun</a></li>
+            <li data-id="playthrough_24_14">Obtain <a href="https://bloodborne.wiki.fextralife.com/Constable+Set">Constable Set</a></li>
+        </ul>
+
+        <h3 id="research_hall"><a href="https://bloodborne.wiki.fextralife.com/Research+Hall">Research Hall</a> (The Old Hunters) <span id="playthrough_totals_25"></span></h3>
+        <ul>
+          <li data-id="playthrough_25_1">Obtain <a href="https://bloodborne.wiki.fextralife.com/Laurence%27s+Skull">Laurence's Skull</a> and <a href="https://bloodborne.wiki.fextralife.com/Church+Cannon">Church Cannon</a> from the alter</li>
+          <li data-id="playthrough_25_2">Rotate the stairs on the top floor</li>
+          <li data-id="playthrough_25_3">Bring <a href="https://bloodborne.wiki.fextralife.com/Brain+Fluid">Brain Fluid</a> to <a href="https://bloodborne.wiki.fextralife.com/Saint+Adeline">Adeline</a>, they are found on non-aggressive enlarged heads</li>
+          <li data-id="playthrough_25_4">Grab the <a href="https://bloodborne.wiki.fextralife.com/Underground+Cell+Key">Underground Cell Key</a>, you can now go back under the research hall to many locked cells</li>
+          <li data-id="playthrough_25_5">Obtain the <a href="https://bloodborne.wiki.fextralife.com/Balcony+Key">Balcony Key</a> from <a href="https://bloodborne.wiki.fextralife.com/Saint+Adeline">Adeline</a></li>
+          <li data-id="playthrough_25_6">Obtain the <a href="https://bloodborne.wiki.fextralife.com/Milkweed">Milkweed Rune</a> from <a href="https://bloodborne.wiki.fextralife.com/Saint+Adeline">Adeline</a></li>
+          <li data-id="playthrough_25_7">Obtain the <a href="https://bloodborne.wiki.fextralife.com/Blacksky+Eye">Blacksky Eye</a></li>
+          <li data-id="playthrough_25_8">Defeat <a href="https://bloodborne.wiki.fextralife.com/Living+Failues">Living Failues</a></li>
+          <li data-id="playthrough_25_9">Defeat <a href="https://bloodborne.wiki.fextralife.com/Lady+Maria+of+the+Astral+Clocktower">Lady Maria of the Astral Clocktower</a></li>
+          <li data-id="playthrough_25_10">Obtain <a href="https://bloodborne.wiki.fextralife.com/Bloodletter">Bloodletter</a> after getting the Underground Cell Inner Chamber Key (see <a href="#fishing_hamlet">Fishing Hamlet</a>)</li>
+          <li data-id="playthough_25_11">Obtain <a href="https://bloodborne.wiki.fextralife.com/Loch+Shield">Loch Shield</a></li>
+          <li data-id="playthough_25_12">Obtain <a href="https://bloodborne.wiki.fextralife.com/Church+Cannon">Church Cannon</a></li>
+          <li data-id="playthough_25_13">Obtain <a href="https://bloodborne.wiki.fextralife.com/Decorative+Old+Hunter+Set">Decorative Old Hunter Set</a></li>
+          <li data-id="playthough_25_14">Obtain <a href="https://bloodborne.wiki.fextralife.com/Enlarged+Head">Enlarged Head</a></li>
+        </ul>
+
+        <h3 id="fishing_hamlet"><a href="https://bloodborne.wiki.fextralife.com/Fishing+Hamlet">Fishing Hamlet</a> (The Old Hunters) <span id="playthrough_totals_26"></span></h3>
+        <ul>
+            <li data-id="playthrough_26_1">Obtain <a href="https://bloodborne.wiki.fextralife.com/Accursed+Brew">Accursed Brew</a> while wearing the Milkweed Rune</li>
+            <li data-id="playthrough_26_6">Obtain <a href="https://bloodborne.wiki.fextralife.com/Rakuyo">Rakuyo</a> by defeating the Shark-Gaint hanging on the ceiling of the well</li>
+            <li data-id="playthrough_26_2">Obtain <a href="https://bloodborne.wiki.fextralife.com/Underground+Cell+Inner+Chamber+Key">Underground Cell Inner Chamber Key</a></li>
+            <li data-id="playthrough_26_3">Obtain <a href="https://bloodborne.wiki.fextralife.com/Brador%27s+Set">Brador's Set</a> from Brador, Brador's Testimony is back under the Research Hall
+              <ul>
+                <li data-id="playthrough_26_7">Obtain Beast Hide Garb</li>
+                <li data-id="playthrough_26_8">Obtain Bloodied Arm</li>
+                <li data-id="playthrough_26_9">Obtain Bloodied Trousers</li>
+                <li data-id="playthrough_26_10">Obtain Brador's Testimony</li>
+              </ul>
+            </li>
+            <li data-id="playthrough_26_4">Obtain <a href="https://bloodborne.wiki.fextralife.com/Harrowed+Set">Harrowed Set</a></li>
+            <li data-id="playthrough_26_5">Obtain <a href="https://bloodborne.wiki.fextralife.com/Simon%27s+Bowblade">Simon's Bowblade</a></li>
+            <li data-id="playthrough_26_6">Defeat <a href="https://bloodborne.wiki.fextralife.com/Orphan+of+Kos">Orphan of Kos</a> (or some say Kosm)</li>
+        </ul>
+
+
+        <h3 id="End_Game">End Game - <a href="http://bloodborne.wiki.fextralife.com/Hunter%27s+Dream">Hunter's Dream</a> <span id="playthrough_totals_27"></span></h3>
+        <ul>
+          <li data-id="playthrough_27_1">Complete <a href="http://bloodborne.wiki.fextralife.com/Arianna">Arianna</a>'s quest line to receive <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a></li>
+          <li data-id="playthrough_27_2">Complete <a href="http://bloodborne.wiki.fextralife.com/Iosefka">Iosefka</a>'s quest line to receive <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a></li>
+          <li data-id="playthrough_27_3">There are <a href="http://bloodborne.wiki.fextralife.com/Endings">three endings</a> and how you proceed will decide which ending you get. NOTE: Once you trigger the end game boss(es) you can not continue in the open world so finish everything you want to before triggering the end.
+            <ul>
+              <li data-id="playthrough_27_4">Ending one - Consume no more than 2 <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a> and then talk to <a href="http://bloodborne.wiki.fextralife.com/Gehrman">Gehrman</a>. Let him kill you, no final boss</li>
+              <li data-id="playthrough_27_5">Ending two - Consume no more than 2 <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a> and then talk to <a href="http://bloodborne.wiki.fextralife.com/Gehrman">Gehrman</a>. Fight him as final boss</li>
+              <li data-id="playthrough_27_6">Ending three - Collect and consume 3 or more <a href="http://bloodborne.wiki.fextralife.com/One+Third+of+Umbilical+Cord">One Third of Umbilical Cord</a> and then talk to <a href="http://bloodborne.wiki.fextralife.com/Gehrman">Gehrman</a>. Fight him as the penultimate boss before the <a href="http://bloodborne.wiki.fextralife.com/Moon+Presence">Moon Presence</a> - the true final boss</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane" id="tabChecklists">
+        <h2>Checklists <span id="checklist_overall_total"></span></h2>
+        <ul>
+          <li><a href="#Hunters_Essence">Hunter's Essence</a> (Acquire all Weapons) <span id="checklist_nav_totals_1"></span></li>
+          <li><a href="#Hunters_Craft">Hunter's Craft</a> (Acquire all Hunter Tools) <span id="checklist_nav_totals_2"></span></li>
+        </ul>
+
+        <hr />
+
+        <h3 id="Hunters_Essence">Hunter's Essence (Acquire all <a href="http://bloodborne.wiki.fextralife.com/Weapons">Weapons</a>) <span id="checklist_totals_1"></span></h3>
+        <h4>Trick Weapons</h4>
+        <ul>
+          <li data-id="checklist_1_1"><a href="http://bloodborne.wiki.fextralife.com/Beast+Claw">Beast Claw</a> - <a href="http://bloodborne.wiki.fextralife.com/Ailing+Loran+Chalice">Ailing Loran Chalice</a></li>
+          <li data-id="checklist_1_2"><a href="http://bloodborne.wiki.fextralife.com/Blade+of+Mercy">Blade of Mercy</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 40,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Crow+Hunter+Badge">Crow Hunter Badge</a></li>
+          <li data-id="checklist_1_3"><a href="http://bloodborne.wiki.fextralife.com/Burial+Blade">Burial Blade</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 60,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after defeating <a href="http://bloodborne.wiki.fextralife.com/Gehrman%2C+The+First+Hunter">Gehrman, The First Hunter</a></li>
+          <li data-id="checklist_1_4"><a href="http://bloodborne.wiki.fextralife.com/Chikage">Chikage</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 50,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Badge">Cainhurst Badge</a></li>
+          <li data-id="checklist_1_5"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Axe">Hunter Axe</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1100 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after acquiring the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_6"><a href="http://bloodborne.wiki.fextralife.com/Kirkhammer">Kirkhammer</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 3,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Sword+Hunter+Badge">Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_7"><a href="http://bloodborne.wiki.fextralife.com/Logarius%27+Wheel">Logarius' Wheel</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 13,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Wheel+Hunter+Badge">Wheel Hunter Badge</a></li>
+          <li data-id="checklist_1_8"><a href="http://bloodborne.wiki.fextralife.com/Ludwig%27s+Holy+Blade">Ludwig's Holy Blade</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 20,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_9"><a href="http://bloodborne.wiki.fextralife.com/Reiterpallasch">Reiterpallasch</a> - Obtained in a chest on the ground floor of <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Castle">Cainhurst Castle</a></li>
+          <li data-id="checklist_1_10"><a href="http://bloodborne.wiki.fextralife.com/Rifle+Spear">Rifle Spear</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 4,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Powder+Keg+Hunter+Badge">Powder Keg Hunter Badge</a> or obtained from body in <a href="http://bloodborne.wiki.fextralife.com/Old+Yharnam">Old Yharnam</a></li>
+          <li data-id="checklist_1_11"><a href="http://bloodborne.wiki.fextralife.com/Saw+Cleaver">Saw Cleaver</a> - Acquired at the beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_12"><a href="http://bloodborne.wiki.fextralife.com/Saw+Spear">Saw Spear</a> - Found on body in <a href="http://bloodborne.wiki.fextralife.com/Central+Yharnam">Central Yharnam</a> or can be purchased for 1000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the Messengers after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_13"><a href="http://bloodborne.wiki.fextralife.com/Stake+Driver">Stake Driver</a> - Can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 8,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Powder+Keg+Hunter+Badge">Powder Keg Hunter Badge</a></li>
+          <li data-id="checklist_1_14"><a href="http://bloodborne.wiki.fextralife.com/Threaded+Cane">Threaded Cane</a> - Acquired at the beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or later purchased for 1200 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from them after finding the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_15"><a href="http://bloodborne.wiki.fextralife.com/Tonitrus">Tonitrus</a> - Found on a body in <a href="http://bloodborne.wiki.fextralife.com/Hypogean+Gaol">Hypogean Gaol</a> or can be purchased from <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 26,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining <a href="http://bloodborne.wiki.fextralife.com/Spark+Hunter+Badge">Spark Hunter Badge</a></li>
+        </ul>
+        <h4>Trick Weapons (The Old Hunters DLC)</h4>
+        <ul>
+          <li data-id="checklist_1_16"><a href="https://bloodborne.wiki.fextralife.com/Amygdalan+Arm">Amygdalan Arm</a></li>
+          <li data-id="checklist_1_17"><a href="https://bloodborne.wiki.fextralife.com/Beasthunter+Saif">Beasthunter Saif</a></li>
+          <li data-id="checklist_1_18"><a href="https://bloodborne.wiki.fextralife.com/Beast+Cutter">Beast Cutter</a></li>
+          <li data-id="checklist_1_19"><a href="https://bloodborne.wiki.fextralife.com/Bloodletter">Bloodletter</a></li>
+          <li data-id="checklist_1_20"><a href="https://bloodborne.wiki.fextralife.com/Boom+Hammer">Boom Hammer</a></li>
+          <li data-id="checklist_1_21"><a href="https://bloodborne.wiki.fextralife.com/Church+Pick">Church Pick</a></li>
+          <li data-id="checklist_1_22"><a href="https://bloodborne.wiki.fextralife.com/Holy+Moonlight+Sword">Holy Moonlight Sword</a></li>
+          <li data-id="checklist_1_23"><a href="https://bloodborne.wiki.fextralife.com/Kos+Parasite">Kos Parasite</a></li>
+          <li data-id="checklist_1_24"><a href="https://bloodborne.wiki.fextralife.com/Rakuyo">Rakuyo</a></li>
+          <li data-id="checklist_1_25"><a href="https://bloodborne.wiki.fextralife.com/Simon%27s+Bowblade">Simon's Bowblade</a></li>
+          <li data-id="checklist_1_26"><a href="https://bloodborne.wiki.fextralife.com/Whirligig+Saw">Whirligig Saw</a></li>
+        </ul>
+        <h4>Firearms</h4>
+        <ul>
+          <li data-id="checklist_1_27"><a href="http://bloodborne.wiki.fextralife.com/Cannon">Cannon</a> - Found in the rafters of a building inside the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a></li>
+          <li data-id="checklist_1_28"><a href="http://bloodborne.wiki.fextralife.com/Evelyn">Evelyn</a> - Can be purchased for 16,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Badge">Cainhurst Badge</a> from joining the <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Vilebloods">Cainhurst Vilebloods</a>. Can also be found in a chest in <a href="http://bloodborne.wiki.fextralife.com/Cainhurst+Castle">Cainhurst Castle</a></li>
+          <li data-id="checklist_1_29"><a href="http://bloodborne.wiki.fextralife.com/Flamesprayer">Flamesprayer</a> - Acquired from <a href="http://bloodborne.wiki.fextralife.com/Gilbert">Gilbert</a> after entering the <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> or can be purchased from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> for 8,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_30"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Blunderbuss">Hunter Blunderbuss</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or can be purchased later from them for 1,700 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_31"><a href="http://bloodborne.wiki.fextralife.com/Hunter+Pistol">Hunter Pistol</a> - Acquired at the very beginning of the game from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> or can be purchased later from them for 1,600 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Saw+Hunter+Badge">Saw Hunter Badge</a></li>
+          <li data-id="checklist_1_32"><a href="http://bloodborne.wiki.fextralife.com/Hunter%27s+Torch">Hunter's Torch</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Old+Yharnam">Old Yharnam</a> on a corpse</li>
+          <li data-id="checklist_1_33"><a href="http://bloodborne.wiki.fextralife.com/Ludwig%27s+Rifle">Ludwig's Rifle</a> - Can be purchased for 10,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the </li>
+          <li data-id="checklist_1_34"><a href="https://bloodborne.wiki.fextralife.com/Repeating+Pistol">Repeating Pistol</a> - Can be purchased for 3,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Radiant+Sword+Hunter+Badge">Radiant Sword Hunter Badge</a></li>
+          <li data-id="checklist_1_35"><a href="http://bloodborne.wiki.fextralife.com/Rosmarinus">Rosmarinus</a> - Can be purchased for 60,000 <a href="http://bloodborne.wiki.fextralife.com/Blood+Echoes">Blood Echoes</a> from the <a href="http://bloodborne.wiki.fextralife.com/Messengers">Messengers</a> after obtaining the <a href="http://bloodborne.wiki.fextralife.com/Cosmic+Eye+Watcher+Badge">Cosmic Eye Watcher Badge</a></li>
+          <li data-id="checklist_1_36"><a href="http://bloodborne.wiki.fextralife.com/Torch">Torch</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Central+Yarnham">Central Yarnham</a> on a corpse</li>
+          <li data-id="checklist_1_37"><a href="http://bloodborne.wiki.fextralife.com/Wooden+Shield">Wooden Shield</a> - Found in <a href="http://bloodborne.wiki.fextralife.com/Cathedral+Ward">Cathedral Ward</a> on a corpse</li>
+        </ul>
+        <h4>Firearms (The Old Hunters DLC)</h4>
+        <ul>
+          <li data-id="checklist_1_38"><a href="https://bloodborne.wiki.fextralife.com/Church+Cannon">Church Cannon</a></li>
+          <li data-id="checklist_1_39"><a href="https://bloodborne.wiki.fextralife.com/Fist+of+Gratia">Fist of Gratia</a></li>
+          <li data-id="checklist_1_40"><a href="https://bloodborne.wiki.fextralife.com/Gatling+Gun">Gatling Gun</a></li>
+          <li data-id="checklist_1_41"><a href="https://bloodborne.wiki.fextralife.com/Piercing+Rifle">Piercing Rifle</a></li>
+          <li data-id="checklist_1_42"><a href="https://bloodborne.wiki.fextralife.com/Loch+Shield">Loch Shield</a></li>
+        </ul>
+
+        <h3 id="Hunters_Craft">Hunter's Craft (Acquire all <a href="http://bloodborne.wiki.fextralife.com/Hunter+Tools">Hunter Tools</a>) <span id="checklist_totals_2"></span></h3>
+        <h4>Hunter Tools</h4>
+        <ul>
+          <li data-id="checklist_2_1"><a href="http://bloodborne.wiki.fextralife.com/Old+Hunter+Bone">Old Hunter Bone</a> - Found near a tombstone in the <a href="http://bloodborne.wiki.fextralife.com/Old+Abandoned+Workshop">Old Abandoned Workshop</a></li>
+          <li data-id="checklist_2_2"><a href="http://bloodborne.wiki.fextralife.com/Beast+Roar">Beast Roar</a> - In a house near the hound cages in the <a href="http://bloodborne.wiki.fextralife.com/Forbidden+Woods">Forbidden Woods</a></li>
+          <li data-id="checklist_2_3"><a href="http://bloodborne.wiki.fextralife.com/Messenger%27s+Gift">Messenger's Gift</a> - <a href="http://bloodborne.wiki.fextralife.com/Nightmare+Frontier">Nightmare Frontier</a></li>
+          <li data-id="checklist_2_4"><a href="http://bloodborne.wiki.fextralife.com/Executioner%27s+Gloves">Executioner's Gloves</a> - <a href="http://bloodborne.wiki.fextralife.com/Forsaken+Castle+Cainhurst">Forsaken Castle Cainhurst</a> library</li>
+          <li data-id="checklist_2_5"><a href="http://bloodborne.wiki.fextralife.com/Empty+Phantasm+Shell">Empty Phantasm Shell</a> - In a chest close to the entrance of the lunarium in <a href="http://bloodborne.wiki.fextralife.com/Byrgenwerth">Byrgenwerth</a></li>
+          <li data-id="checklist_2_6"><a href="http://bloodborne.wiki.fextralife.com/Tiny+Tonitrus">Tiny Tonitrus</a> - <a href="http://bloodborne.wiki.fextralife.com/Yahar%27gul%2C+Unseen+Village">Yahar'gul, Unseen Village</a>, Chapel Lantern</li>
+          <li data-id="checklist_2_7"><a href="http://bloodborne.wiki.fextralife.com/Choir+Bell">Choir Bell</a> - <a href="http://bloodborne.wiki.fextralife.com/Mergo%27s+Loft+Middle">Mergo's Loft Middle</a></li>
+          <li data-id="checklist_2_8"><a href="http://bloodborne.wiki.fextralife.com/Augur+of+Ebrietas">Augur of Ebrietas</a> - <a href="http://bloodborne.wiki.fextralife.com/Lecture+Building">Lecture Building</a></li>
+          <li data-id="checklist_2_9"><a href="http://bloodborne.wiki.fextralife.com/A+Call+Beyond">A Call Beyond</a> - <a href="http://bloodborne.wiki.fextralife.com/Upper+Cathedral+Ward">Upper Cathedral Ward</a>, after you defeat the <a href="http://bloodborne.wiki.fextralife.com/Celestial+Emissary">Celestial Emissary</a></li>
+        </ul>
+        <h4>Hunter Tools (The Old Hunters DLC)</h4>
+        <ul>
+          <li data-id="checklist_2_10"><a href="https://bloodborne.wiki.fextralife.com/Blacksky+Eye">Blacksky Eye</a></li>
+          <li data-id="checklist_2_11"><a href="https://bloodborne.wiki.fextralife.com/Accursed+Brew">Accursed Brew</a></li>
+        </ul>
+      </div>
+      <div class="tab-pane" id="tabInformation">
+        <h2>Information</h2>
+        <ul>
+          <li><a href="#Coldblood_Types">Coldblood Types</a></li>
+        </ul>
+        <hr />
+
+        <h3 id="Coldblood_Types">Coldblood Types</h3>
+        <table class="table-striped">
+          <thead>
+            <tr><th>Name</th><th>Souls</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="http://bloodborne.wiki.fextralife.com/Coldblood+Dew">Coldblood Dew</a></td>
+              <td>(1) 350 / (2) 500 / (3) 1000</td></tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Thick+Coldblood">Thick Coldblood</a></td>
+                <td>(4) 1200 / (5) 1500 / (6) 1800</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Frenzied+Coldblood">Frenzied Coldblood</a></td>
+                <td>(7) 2000 / (8) 3000 / (9) 5000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Kin+Coldblood">Kin Coldblood</a></td>
+                <td>(10) 8000 / (11) 10,000 / (12) 20,000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Great+One+Coldblood">Great One Coldblood</a></td>
+                <td>40,000</td>
+              </tr><tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Old+Great+One+Coldblood">Old Great One Coldblood</a></td>
+                <td>50,000</td>
+              </tr>
+              <tr>
+                <td><a href="http://bloodborne.wiki.fextralife.com/Revered+Great+One+Coldblood">Revered Great One Coldblood</a></td>
+                <td>100,000 - Not found in game yet</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane" id="tabHelp">
+          <h2>Help</h2>
+
+          <h3>Is this a guide?</h3>
+          <p>Nope, not really. This is a set of checklists and information that you can use while playing Dark Souls to make sure you don't miss an item, action, conversation or boss. If you need playthroughs then you can click on the links scattered throughout the page to find them in the wiki.</p>
+
+          <h3>Do I need to follow the playthrough in this exact order?</h3>
+          <p>Bloodborne is not a liner game and has multiple ways of progressing. This is generally the way I like to play through the game, so feel free to follow it if you like or mix it up. You can always jump back and forth and check things off in a different order.</p>
+
+          <h3>Can I use this for multiple characters?</h3>
+          <p>Yup, use the profile selector and buttons at the top right of the page to setup multiple characters.</p>
+
+          <h3>How do I help with feedback, corrections, suggestions or additions?</h3>
+          <p>You can post in <a href="https://www.reddit.com/r/bloodborne/comments/3sfmxs/bloodborne_progress_guide/">this Reddit thread</a> or if you know your way about Git/GitHub then fork <a href="https://github.com/ZKjellberg/bloodborne-cheat-sheet/">my repo</a> and submit a pull request.</p>
+
+          <h3>How does the checklist status get saved?</h3>
+          <p>It gets saved to the local storage in your browser and not to any database or API. So if you are
+            clearing your browser cache make sure not to delete the site data or your checklists will
+            get reset.</p>
+        </div>
+      </div>
+    </div>
+    <div id="profileModal" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 id="profileModalTitle">Profile</h3>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="control-group">
+            <label class="control-label" for="profileModalName">Name</label>
+            <div class="controls">
+              <input type="text" id="profileModalName" placeholder="Enter profile name">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" id="profileModalClose" class="btn">Close</a>
+        <a href="#" id="profileModalAdd" class="btn btn-primary">Add</a>
+        <a href="#" id="profileModalUpdate" class="btn btn-primary">Update</a>
+        <a href="#" id="profileModalDelete" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+  </body>
+</html>
